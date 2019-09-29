@@ -1,0 +1,3 @@
+[submodule "Holiday"]
+	path = Holiday
+	url = https://github.com/martinjw/Holiday.git
