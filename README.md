@@ -33,16 +33,18 @@ Rpc api fetchs all public holiday of countries below using https://github.com/ma
 # Running via Docker
 
 ## Building docker image
+```
 docker build -t holidayapi .
-
+```
 ## Running via docker-compose
 After you built docker image, you can run the docker-compose command below to start holidayapi service
+```
 docker-compose -f docker-compose.yml up
-
+```
 You can change the port in docker-compose.yml to host it on different port of localhost
 
 # Example Request
-then you will be able to request the http://localhost:5000/holiday url with the following body 
+then you will be able to request the http://localhost:5000/holiday url with the following example body 
 
 ```json
 {
