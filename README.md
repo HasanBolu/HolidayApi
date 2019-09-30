@@ -1,6 +1,11 @@
 # HolidayApi
-Rpc api fetchs all public holiday of countries below using https://github.com/martinjw/Holiday project. The Holiday project addes as a git sub module.
+Rpc api fetchs all public holiday of countries below using https://github.com/martinjw/Holiday project. 
+The Holiday project added as a git sub module and You should run following two commands to get Holiday project files after cloned this repository
 
+```git
+git submodule init 
+git submodule update
+```
 - Europe
   - Austria 
   - Belgium 
