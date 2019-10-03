@@ -73,12 +73,8 @@ namespace HolidayApi.Services
                 publicHolidayHandlers.Add(model);
             }
 
-            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasSecondJanuary: true), CountryCode = "CH/CHE", State = "" });
-            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasLaborDay: true), CountryCode = "CH/CHE", State = "" });
-            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasCorpusChristi: true), CountryCode = "CH/CHE", State = "" });
-            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasChristmasEve: true), CountryCode = "CH/CHE", State = "" });
-            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasNewYearsEve: true), CountryCode = "CH/CHE", State = "" });
-
+            publicHolidayHandlers.Add(new CountryPublicHolidayModel() { CountryPublicHoliday = new SwitzerlandPublicHoliday(hasSecondJanuary: true, hasLaborDay: true, hasCorpusChristi: true, hasChristmasEve: true, hasNewYearsEve: true), CountryCode = "CH/CHE", State = "" });
+            
             return publicHolidayHandlers;
         }
 
